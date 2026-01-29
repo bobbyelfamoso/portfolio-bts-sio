@@ -43,122 +43,25 @@
         <!-- Navigation -->
         <nav id="main-nav" class="pixel-nav">
             <ul>
-                <li><a href="#synthese" class="nav-btn">▸ TABLEAU DE SYNTHÈSE</a></li>
                 <li><a href="#blocs" class="nav-btn">▸ BLOCS DE COMPÉTENCES</a></li>
+                <li><a href="#experiences" class="nav-btn">▸ RÉALISATIONS PRO</a></li>
                 <li><a href="#contact" class="nav-btn">▸ CONTACT</a></li>
             </ul>
         </nav>
 
-        <!-- Tableau de synthèse Section -->
-        <section id="synthese" class="content-section pixel-box highlight-section">
-            <h2 class="section-title trophy-title">
-                <span class="trophy-icon">▣</span>
-                <span>TABLEAU_DE_SYNTHESE.DAT</span>
-                <span class="trophy-icon">▣</span>
-            </h2>
-            <div class="achievement-unlocked">
-                <span class="blink-text">★ RÉALISATIONS PROFESSIONNELLES ★</span>
-            </div>
-
-            <div class="terminal-text">
-                <p><span class="prompt">$</span> cat realisations_professionnelles.txt</p>
-                <p style="opacity: 0.8; margin-bottom: 2rem;">Liste exhaustive des projets et réalisations dans le cadre
-                    du BTS SIO :</p>
-            </div>
-
-            <div class="synthesis-grid">
-                <!-- Infrastructure & Systèmes -->
-                <div class="synthesis-card pixel-card">
-                    <div class="synthesis-header">
-                        <span class="synthesis-icon">■</span>
-                        <h3 class="synthesis-category">INFRASTRUCTURE & SYSTÈMES</h3>
-                    </div>
-                    <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Installation d'une VM</li>
-                        <li><span class="bullet">▸</span> Installation du serveur GLPI et de ses agents sur les PC pour
-                            faire un recensement</li>
-                        <li><span class="bullet">▸</span> Dépannage et remplacement de matériels défectueux</li>
-                        <li><span class="bullet">▸</span> Gestion des onboarding / offboarding sur Azure et infra</li>
-                    </ul>
-                </div>
-
-                <!-- Développement Web -->
-                <div class="synthesis-card pixel-card">
-                    <div class="synthesis-header">
-                        <span class="synthesis-icon">■</span>
-                        <h3 class="synthesis-category">DÉVELOPPEMENT WEB</h3>
-                    </div>
-                    <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Installer les outils nécessaires pour créer un site web (Lamp,
-                            Wamp, Xampp)</li>
-                        <li><span class="bullet">▸</span> Créer un site web + déploiement Firebase ou GitHub Pages si
-                            c'est static</li>
-                        <li><span class="bullet">▸</span> Mise en place d'une page d'accueil centralisant les services
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Gestion de Projet -->
-                <div class="synthesis-card pixel-card">
-                    <div class="synthesis-header">
-                        <span class="synthesis-icon">■</span>
-                        <h3 class="synthesis-category">GESTION DE PROJET</h3>
-                    </div>
-                    <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Motiver les équipes et leur attribuer des tâches réalisées et
-                            à rendre en un temps adapté tout en les challengeant</li>
-                        <li><span class="bullet">▸</span> Cadrage du projet (objectifs, périmètre, MVC)</li>
-                        <li><span class="bullet">▸</span> Arbitrage (PDC, délais, priorités)</li>
-                        <li><span class="bullet">▸</span> Tests d'intégration / acceptation (vitrine + services)</li>
-                    </ul>
-                </div>
-
-                <!-- Communication & Marketing -->
-                <div class="synthesis-card pixel-card">
-                    <div class="synthesis-header">
-                        <span class="synthesis-icon">■</span>
-                        <h3 class="synthesis-category">COMMUNICATION DIGITALE</h3>
-                    </div>
-                    <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Création de réseaux sociaux + post en ligne pour promouvoir le
-                            service</li>
-                    </ul>
-                </div>
-
-                <!-- Cybersécurité -->
-                <div class="synthesis-card pixel-card">
-                    <div class="synthesis-header">
-                        <span class="synthesis-icon">■</span>
-                        <h3 class="synthesis-category">CYBERSÉCURITÉ</h3>
-                    </div>
-                    <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Préparation et présentation de user guide de KeePass ou
-                            d'outil GRC pour mon type d'entreprise</li>
-                        <li><span class="bullet">▸</span> Avertir les users lors d'un incidents (credentials compromise)
-                            et assurer la conformité des user guides</li>
-                        <li><span class="bullet">▸</span> Animation webinar awareness cyber</li>
-                        <li><span class="bullet">▸</span> Organisation et vérifications des contrôles dans le cadre de
-                            la certif ISO27001</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blocs de compétences Section -->
+        <!-- Blocs de compétences (Scolaire) -->
         <section id="blocs" class="content-section pixel-box highlight-section">
             <h2 class="section-title trophy-title">
                 <span class="trophy-icon">▣</span>
-                <span>BLOCS_DE_COMPETENCES.DAT</span>
+                <span>BLOCS_COMPETENCES_SIO.EXE</span>
                 <span class="trophy-icon">▣</span>
             </h2>
             <div class="achievement-unlocked">
-                <span class="blink-text">★ RÉALISATIONS PROFESSIONNELLES ★</span>
+                <span class="blink-text">★ TRAVAUX ACADÉMIQUES & PROJETS ★</span>
             </div>
 
             <div class="terminal-text">
-                <p><span class="prompt">$</span> cat blocs_competences.txt</p>
-                <p style="opacity: 0.8; margin-bottom: 2rem;">Détail des réalisations professionnelles par bloc de
-                    compétences :</p>
+                <p><span class="prompt">$</span> ls -R /home/scholar/projects/</p>
             </div>
 
             <div class="talks-grid">
@@ -166,96 +69,113 @@
                 <div class="talk-card pixel-card glow-border">
                     <div class="talk-header">
                         <span class="year-badge">BLOC 1</span>
-                        <span class="event-name">SISR</span>
+                        <span class="event-name">Patrimoine</span>
                     </div>
                     <p class="talk-title">Gérer le patrimoine informatique</p>
                     <div class="pixel-separator"></div>
-                    <p class="talk-desc">Exploitations et gestion des équipements connectés, maintenance préventive et
-                        corrective, supervision des réseaux.</p>
-                    <a href="bloc_de_competences/gerer-patrimoine-informatique.html" class="pixel-button"
-                        style="display: inline-block; margin-top: 1rem; width: 100%; text-align: center; text-decoration: none;">
-                        <span style="margin-right: 0.5rem;">▸</span> Accéder au bloc
-                    </a>
+                    <ul class="synthesis-list">
+                        <li><span class="bullet">▸</span> Installation d'une VM</li>
+                        <li><span class="bullet">▸</span> Installation serveur GLPI et agents</li>
+                    </ul>
                 </div>
 
                 <!-- Bloc 2 -->
                 <div class="talk-card pixel-card glow-border">
                     <div class="talk-header">
                         <span class="year-badge">BLOC 2</span>
-                        <span class="event-name">SISR</span>
+                        <span class="event-name">Incidents</span>
                     </div>
-                    <p class="talk-title">Répondre aux incidents et demandes d'assistance</p>
+                    <p class="talk-title">Répondre aux incidents</p>
                     <div class="pixel-separator"></div>
-                    <p class="talk-desc">Traitement des incidents et demandes, accompagnement des utilisateurs, gestion
-                        des ressources.</p>
-                    <a href="bloc_de_competences/repondre-incidents.html" class="pixel-button"
-                        style="display: inline-block; margin-top: 1rem; width: 100%; text-align: center; text-decoration: none;">
-                        <span style="margin-right: 0.5rem;">▸</span> Accéder au bloc
-                    </a>
+                    <ul class="synthesis-list">
+                        <li><span class="bullet">▸</span> Support utilisateur niveau 1/2</li>
+                        <li><span class="bullet">▸</span> Traitement des demandes d'assistance</li>
+                    </ul>
                 </div>
 
                 <!-- Bloc 3 -->
                 <div class="talk-card pixel-card glow-border">
                     <div class="talk-header">
                         <span class="year-badge">BLOC 3</span>
-                        <span class="event-name">SISR</span>
+                        <span class="event-name">Web</span>
                     </div>
                     <p class="talk-title">Développer la présence en ligne</p>
                     <div class="pixel-separator"></div>
-                    <p class="talk-desc">Référencement, veille technologique, collaboration en ligne et communication
-                        numérique.</p>
-                    <a href="bloc_de_competences/developper-presence-en-ligne.html" class="pixel-button"
-                        style="display: inline-block; margin-top: 1rem; width: 100%; text-align: center; text-decoration: none;">
-                        <span style="margin-right: 0.5rem;">▸</span> Accéder au bloc
-                    </a>
+                    <ul class="synthesis-list">
+                        <li><span class="bullet">▸</span> Installation outils (LAMP/WAMP)</li>
+                        <li><span class="bullet">▸</span> Création et déploiement site web</li>
+                        <li><span class="bullet">▸</span> Page d'accueil centralisée</li>
+                        <li><span class="bullet">▸</span> Promotion via réseaux sociaux</li>
+                    </ul>
                 </div>
 
                 <!-- Bloc 4 -->
                 <div class="talk-card pixel-card glow-border">
                     <div class="talk-header">
                         <span class="year-badge">BLOC 4</span>
-                        <span class="event-name">SISR</span>
+                        <span class="event-name">Projet</span>
                     </div>
                     <p class="talk-title">Travailler en mode projet</p>
                     <div class="pixel-separator"></div>
-                    <p class="talk-desc">Analyse des objectifs, planification, réalisation et évaluation des projets
-                        informatiques.</p>
-                    <a href="bloc_de_competences/travailler-en-mode-projet.html" class="pixel-button"
-                        style="display: inline-block; margin-top: 1rem; width: 100%; text-align: center; text-decoration: none;">
-                        <span style="margin-right: 0.5rem;">▸</span> Accéder au bloc
-                    </a>
+                    <ul class="synthesis-list">
+                        <li><span class="bullet">▸</span> Cadrage et MVP</li>
+                        <li><span class="bullet">▸</span> Arbitrages et tests d'intégration</li>
+                        <li><span class="bullet">▸</span> Coordination d'équipe agile</li>
+                    </ul>
                 </div>
 
                 <!-- Bloc 5 -->
                 <div class="talk-card pixel-card glow-border">
                     <div class="talk-header">
                         <span class="year-badge">BLOC 5</span>
-                        <span class="event-name">SISR</span>
+                        <span class="event-name">Service</span>
                     </div>
-                    <p class="talk-title">Mettre à disposition un service informatique</p>
+                    <p class="talk-title">Mettre à disposition un service</p>
                     <div class="pixel-separator"></div>
-                    <p class="talk-desc">Installation, configuration et sécurisation des services réseaux et systèmes.
-                    </p>
-                    <a href="bloc_de_competences/mettre-a-disposition-service-informatique.html" class="pixel-button"
-                        style="display: inline-block; margin-top: 1rem; width: 100%; text-align: center; text-decoration: none;">
-                        <span style="margin-right: 0.5rem;">▸</span> Accéder au bloc
-                    </a>
+                    <ul class="synthesis-list">
+                        <li><span class="bullet">▸</span> Configuration services réseaux</li>
+                        <li><span class="bullet">▸</span> Mise en production de services</li>
+                    </ul>
                 </div>
 
                 <!-- Bloc 6 -->
                 <div class="talk-card pixel-card glow-border">
                     <div class="talk-header">
                         <span class="year-badge">BLOC 6</span>
-                        <span class="event-name">SISR</span>
+                        <span class="event-name">Pro</span>
                     </div>
-                    <p class="talk-title">Organiser son développement professionnel</p>
+                    <p class="talk-title">Développement professionnel</p>
                     <div class="pixel-separator"></div>
-                    <p class="talk-desc">Veille technologique, formation continue, certifications et développement des
-                        compétences.</p>
-                    <a href="bloc_de_competences/organiser-developpement-professionnel.html" class="pixel-button"
-                        style="display: inline-block; margin-top: 1rem; width: 100%; text-align: center; text-decoration: none;">
-                        <span style="margin-right: 0.5rem;">▸</span> Accéder au bloc
-                    </a>
+                    <ul class="synthesis-list">
+                        <li><span class="bullet">▸</span> Veille technologique SISR</li>
+                        <li><span class="bullet">▸</span> Formation continue</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Réalisations Professionnelles Section -->
+        <section id="experiences" class="content-section pixel-box highlight-section">
+            <h2 class="section-title trophy-title">
+                <span class="trophy-icon">▣</span>
+                <span>PROFESSIONAL_REALIZATIONS.LOG</span>
+                <span class="trophy-icon">▣</span>
+            </h2>
+            <div class="achievement-unlocked">
+                <span class="blink-text">★ EXPÉRIENCES EN ENTREPRISE ★</span>
+            </div>
+
+            <div class="terminal-text">
+                <p><span class="prompt">$</span> cat /var/log/pro_experience.log</p>
+                <div class="synthesis-card pixel-card" style="margin-top: 1rem;">
+                    <ul class="synthesis-list">
+                        <li><span class="bullet">▸</span> Gestion des onboarding / offboarding sur Azure et Intra</li>
+                        <li><span class="bullet">▸</span> Préparation user guide KeePass / Outil GRC</li>
+                        <li><span class="bullet">▸</span> Dépannage et remplacement matériel défectueux</li>
+                        <li><span class="bullet">▸</span> Alerting incidents credentials (CTI Darkweb) & conformité</li>
+                        <li><span class="bullet">▸</span> Animation webinar awareness Cyber</li>
+                        <li><span class="bullet">▸</span> Organisation contrôles certification ISO27001</li>
+                    </ul>
                 </div>
             </div>
         </section>

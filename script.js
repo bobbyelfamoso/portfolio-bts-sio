@@ -85,17 +85,61 @@ if (canvas) {
     animate();
 }
 
-// Language switcher (simple version)
+// Language switcher with translation support
+const translations = {
+    'fr': {
+        'nav-blocs': '▸ BLOCS DE COMPÉTENCES',
+        'nav-alternance': '▸ ALTERNANCE',
+        'nav-projets': '▸ PROJETS & LABS',
+        'nav-contact': '▸ CONTACT',
+        'title-blocs': 'BLOCS_COMPETENCES_SIO.EXE',
+        'subtitle-blocs': '★ TRAVAUX ACADÉMIQUES & PROJETS ★',
+        'title-alternance': 'APPRENTICESHIP_WORK.LOG',
+        'subtitle-alternance': '★ MISSIONS EN ENTREPRISE ★',
+        'title-projets': 'SIDE_PROJECTS_&_LABS.EXE',
+        'subtitle-projets': '★ HACKING, HARDWARE & PENTEST ★'
+    },
+    'en': {
+        'nav-blocs': '▸ COMPETENCY BLOCKS',
+        'nav-alternance': '▸ APPRENTICESHIP',
+        'nav-projets': '▸ PROJECTS & LABS',
+        'nav-contact': '▸ CONTACT',
+        'title-blocs': 'COMPETENCY_BLOCKS_SIO.EXE',
+        'subtitle-blocs': '★ ACADEMIC WORKS & PROJECTS ★',
+        'title-alternance': 'APPRENTICESHIP_MISSIONS.LOG',
+        'subtitle-alternance': '★ CORPORATE MISSIONS ★',
+        'title-projets': 'SIDE_PROJECTS_&_LABS.EXE',
+        'subtitle-projets': '★ HACKING, HARDWARE & PENTEST ★'
+    }
+};
+
 function switchLanguage(lang) {
     console.log('Switching to:', lang);
+
+    // Update active button state
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.getAttribute('data-lang') === lang) {
-            btn.classList.add('active');
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+
+    // Update text content for elements with data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
         }
     });
+
+    // Save preference
+    localStorage.setItem('preferred-lang', lang);
 }
 window.switchLanguage = switchLanguage;
+
+// Check for preferred language on load - FORCE SYNC
+document.addEventListener('DOMContentLoaded', () => {
+    // If it's the first time or 'fr', ensure UI matches
+    const savedLang = localStorage.getItem('preferred-lang') || 'fr';
+    switchLanguage(savedLang);
+});
 // Konami Code Logic
 const konamiCode = [
     'ArrowUp', 'ArrowUp',

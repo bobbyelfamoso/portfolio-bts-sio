@@ -2,20 +2,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('%c SYSTEM INITIALIZING... ', 'background: #000; color: #0f0; font-size: 20px; font-family: monospace;');
 
-    // Typewriter
-    const text = 'CYBERSECURITY | PENTESTER | CTF PLAYER | SPEAKER';
-    const typewriterElement = document.getElementById('typewriter-text');
-    if (typewriterElement) {
-        let i = 0;
-        function type() {
-            if (i < text.length) {
-                typewriterElement.textContent += text.charAt(i);
-                i++;
-                setTimeout(type, 50);
-            }
-        }
-        setTimeout(type, 500);
-    }
+    // Typewriter removed by user request
+
 
     // Scroll animations - FIXED selector
     const sections = document.querySelectorAll('.content-section');

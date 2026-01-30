@@ -130,6 +130,18 @@ body {
     z-index: 100;
 }
 
+@media (max-width: 768px) {
+    .language-switcher {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 5px;
+        border: 1px solid var(--color-border);
+        box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+    }
+}
+
 .lang-btn {
     background: rgba(0, 0, 0, 0.8);
     color: var(--color-text);
@@ -1252,19 +1264,27 @@ body {
 
 @media (max-width: 768px) {
     body {
-        font-size: 8px;
+        font-size: 9px;
+        /* Slightly larger for mobile */
     }
 
     .container {
         padding: var(--spacing-md);
+        margin: 5px;
+        /* Small margin to avoid touching screen edges */
     }
 
     .glitch {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        word-break: break-all;
+        /* Prevent overflow on names */
     }
 
     .section-title {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
     }
 
     .pixel-nav ul {
@@ -1272,8 +1292,15 @@ body {
         gap: var(--spacing-sm);
     }
 
+    .nav-btn {
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+
     .talks-grid,
-    .ctf-stats-grid {
+    .ctf-stats-grid,
+    .synthesis-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1283,6 +1310,17 @@ body {
 
     .timeline {
         padding-left: var(--spacing-md);
+    }
+
+    /* Better spacing for cards on mobile */
+    .talk-card,
+    .synthesis-card,
+    .stat-box {
+        padding: var(--spacing-md);
+    }
+
+    .trophy-title {
+        font-size: 1rem;
     }
 }
 

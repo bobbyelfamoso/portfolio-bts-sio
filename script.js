@@ -1,4 +1,4 @@
-﻿// Fixed script with correct selectors
+// Fixed script with correct selectors
 document.addEventListener('DOMContentLoaded', function () {
     console.log('%c SYSTEM INITIALIZING... ', 'background: #000; color: #0f0; font-size: 20px; font-family: monospace;');
 
@@ -95,6 +95,7 @@ const translations = {
         'nav-blocs': '▸ BLOCS DE COMPÉTENCES',
         'nav-alternance': '▸ ALTERNANCE',
         'nav-projets': '▸ PROJETS & LABS',
+        'nav-doc': '▸ DOCUMENTATION',
         'nav-contact': '▸ CONTACT',
         'title-blocs': 'BLOCS_COMPETENCES_SIO.EXE',
         'subtitle-blocs': '★ TRAVAUX ACADÉMIQUES & PROJETS ★',
@@ -102,6 +103,8 @@ const translations = {
         'subtitle-alternance': '★ MISSIONS EN ENTREPRISE ★',
         'title-projets': 'SIDE_PROJECTS_&_LABS.EXE',
         'subtitle-projets': '★ HACKING, HARDWARE & PENTEST ★',
+        'title-doc': 'DOCUMENTATION_GLPI.LOG',
+        'subtitle-doc': '★ SUPPORT INFORMATIQUE & INVENTAIRE ★',
         // Blocs Cards
         'b1-title': 'Gérer le patrimoine informatique',
         'b1-item1': '▸ Installation serveur GLPI (Scolaire)',
@@ -150,6 +153,7 @@ const translations = {
         'nav-blocs': '▸ COMPETENCY BLOCKS',
         'nav-alternance': '▸ APPRENTICESHIP',
         'nav-projets': '▸ PROJECTS & LABS',
+        'nav-doc': '▸ DOCUMENTATION',
         'nav-contact': '▸ CONTACT',
         'title-blocs': 'COMPETENCY_BLOCKS_SIO.EXE',
         'subtitle-blocs': '★ ACADEMIC WORKS & PROJECTS ★',
@@ -157,6 +161,8 @@ const translations = {
         'subtitle-alternance': '★ CORPORATE MISSIONS ★',
         'title-projets': 'SIDE_PROJECTS_&_LABS.EXE',
         'subtitle-projets': '★ HACKING, HARDWARE & PENTEST ★',
+        'title-doc': 'GLPI_DOCUMENTATION.LOG',
+        'subtitle-doc': '★ IT SUPPORT & INVENTORY ★',
         // Blocs Cards
         'b1-title': 'Manage IT Estate',
         'b1-item1': '▸ GLPI Server & Agent installation (Academic)',

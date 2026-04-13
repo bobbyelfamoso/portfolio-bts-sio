@@ -10,16 +10,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-15N217R9KQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-15N217R9KQ');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-15N217R9KQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-15N217R9KQ');
+    </script>
 
 </head>
 
@@ -53,6 +53,7 @@
                 <li><a href="#blocs" class="nav-btn" data-i18n="nav-blocs">▸ BLOCS DE COMPÉTENCES</a></li>
                 <li><a href="#alternance" class="nav-btn" data-i18n="nav-alternance">▸ ALTERNANCE</a></li>
                 <li><a href="#projets" class="nav-btn" data-i18n="nav-projets">▸ PROJETS & LABS</a></li>
+                <li><a href="#doc" class="nav-btn" data-i18n="nav-doc">▸ DOCUMENTATION</a></li>
                 <li><a href="#contact" class="nav-btn" data-i18n="nav-contact">▸ CONTACT</a></li>
             </ul>
         </nav>
@@ -91,11 +92,13 @@
                     <div class="talk-header">
                         <span class="year-badge">BLOC 2</span>
                     </div>
-                    <p class="talk-title">Répondre aux incidents</p>
+                    <p class="talk-title" data-i18n="b2-title">Répondre aux incidents</p>
                     <div class="pixel-separator"></div>
                     <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Support utilisateur niveau 1/2</li>
-                        <li><span class="bullet">▸</span> Traitement des demandes d'assistance</li>
+                        <li data-i18n="b2-item1"><span class="bullet">▸</span> Support utilisateur niveau 1/2 (Scolaire)
+                        </li>
+                        <li data-i18n="b2-item2"><span class="bullet">▸</span> Analyse de trafic réseau & Surveillance
+                            passive (Wireshark) (Stage)</li>
                     </ul>
                 </div>
 
@@ -104,13 +107,16 @@
                     <div class="talk-header">
                         <span class="year-badge">BLOC 3</span>
                     </div>
-                    <p class="talk-title">Développer la présence en ligne</p>
+                    <p class="talk-title" data-i18n="b3-title">Développer la présence en ligne</p>
                     <div class="pixel-separator"></div>
                     <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Installation outils (LAMP/WAMP)</li>
-                        <li><span class="bullet">▸</span> Création et déploiement site web</li>
-                        <li><span class="bullet">▸</span> Mise en ligne de GLPI via Microsoft Azure</li>
-                        <li><span class="bullet">▸</span> Promotion via réseaux sociaux</li>
+                        <li data-i18n="b3-item1"><span class="bullet">▸</span> Déploiement GLPI sur Microsoft Azure
+                            (Scolaire)</li>
+                        <li data-i18n="b3-item2"><span class="bullet">▸</span> Pentest Web : Fuzzing & Exploitation de
+                            vulnérabilités (Stage)</li>
+                        <li data-i18n="b3-item3"><span class="bullet">▸</span> Analyse de requêtes HTTP/S (Burp Suite)
+                            (Stage)</li>
+                        <li data-i18n="b3-item4"><span class="bullet">▸</span> Promotion via réseaux sociaux</li>
                     </ul>
                 </div>
 
@@ -119,12 +125,15 @@
                     <div class="talk-header">
                         <span class="year-badge">BLOC 4</span>
                     </div>
-                    <p class="talk-title">Travailler en mode projet</p>
+                    <p class="talk-title" data-i18n="b4-title">Travailler en mode projet</p>
                     <div class="pixel-separator"></div>
                     <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Cadrage et MVP</li>
-                        <li><span class="bullet">▸</span> Arbitrages et tests d'intégration</li>
-                        <li><span class="bullet">▸</span> Coordination d'équipe agile</li>
+                        <li data-i18n="b4-item1"><span class="bullet">▸</span> Élaboration de scénarios d'intrusion et
+                            tests (Stage)</li>
+                        <li data-i18n="b4-item2"><span class="bullet">▸</span> Rédaction de livrables d'audit technique
+                            (Stage)</li>
+                        <li data-i18n="b4-item3"><span class="bullet">▸</span> Coordination d'équipe agile (Scolaire)
+                        </li>
                     </ul>
                 </div>
 
@@ -133,12 +142,13 @@
                     <div class="talk-header">
                         <span class="year-badge">BLOC 5</span>
                     </div>
-                    <p class="talk-title">Mettre à disposition un service</p>
+                    <p class="talk-title" data-i18n="b5-title">Mettre à disposition un service</p>
                     <div class="pixel-separator"></div>
                     <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Installation d'une VM / Serveur</li>
-                        <li><span class="bullet">▸</span> Exportation et migration de base de données SQL</li>
-                        <li><span class="bullet">▸</span> Configuration services réseaux</li>
+                        <li data-i18n="b5-item1"><span class="bullet">▸</span> Installation d'une VM / Serveur</li>
+                        <li data-i18n="b5-item2"><span class="bullet">▸</span> Exportation et migration de base de
+                            données SQL</li>
+                        <li data-i18n="b5-item3"><span class="bullet">▸</span> Configuration services réseaux</li>
                     </ul>
                 </div>
 
@@ -147,11 +157,13 @@
                     <div class="talk-header">
                         <span class="year-badge">BLOC 6</span>
                     </div>
-                    <p class="talk-title">Développement professionnel</p>
+                    <p class="talk-title" data-i18n="b6-title">Développement professionnel</p>
                     <div class="pixel-separator"></div>
                     <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Veille technologique SISR</li>
-                        <li><span class="bullet">▸</span> Formation continue</li>
+                        <li data-i18n="b6-item1"><span class="bullet">▸</span> Veille sur les CVE & nouvelles techniques
+                            d'attaque (Stage)</li>
+                        <li data-i18n="b6-item2"><span class="bullet">▸</span> Formation continue & Certifications
+                            (Scolaire)</li>
                     </ul>
                 </div>
             </div>
@@ -172,12 +184,17 @@
                 <p><span class="prompt">$</span> cat /var/log/alternance.log</p>
                 <div class="synthesis-card pixel-card" style="margin-top: 1rem;">
                     <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Gestion des onboarding / offboarding sur Azure et Intra</li>
-                        <li><span class="bullet">▸</span> Préparation user guide KeePass / Outil GRC</li>
-                        <li><span class="bullet">▸</span> Dépannage et remplacement matériel défectueux</li>
-                        <li><span class="bullet">▸</span> Alerting incidents credentials (CTI Darkweb) & conformité</li>
-                        <li><span class="bullet">▸</span> Animation webinar awareness Cyber</li>
-                        <li><span class="bullet">▸</span> Organisation contrôles certification ISO27001</li>
+                        <li data-i18n="alt-item1"><span class="bullet">▸</span> Gestion des onboarding / offboarding sur
+                            Azure et Intra</li>
+                        <li data-i18n="alt-item2"><span class="bullet">▸</span> Préparation user guide KeePass / Outil
+                            GRC</li>
+                        <li data-i18n="alt-item3"><span class="bullet">▸</span> Dépannage et remplacement matériel
+                            défectueux</li>
+                        <li data-i18n="alt-item4"><span class="bullet">▸</span> Alerting incidents credentials (CTI
+                            Darkweb) & conformité</li>
+                        <li data-i18n="alt-item5"><span class="bullet">▸</span> Animation webinar awareness Cyber</li>
+                        <li data-i18n="alt-item6"><span class="bullet">▸</span> Organisation contrôles certification
+                            ISO27001</li>
                     </ul>
                 </div>
             </div>
@@ -203,12 +220,35 @@
                 <div class="synthesis-card pixel-card">
                     <div class="synthesis-header">
                         <span class="synthesis-icon">■</span>
-                        <h3 class="synthesis-category">PENTEST & SÉCURITÉ</h3>
+                        <h3 class="synthesis-category" data-i18n="cat-pentest">STAGE PENTEST (02/2025 - 03/2025)</h3>
                     </div>
                     <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Stage d'immersion Pentest (Offensive Security)</li>
-                        <li><span class="bullet">▸</span> Participation régulière à des CTF (Capture The Flag)</li>
-                        <li><span class="bullet">▸</span> Promotion des métiers de la Cyber auprès des femmes</li>
+                        <li data-i18n="pent-item1"><span class="bullet">▸</span> Pentest Web : Fuzzing & Exploitation de
+                            vulnérabilités</li>
+                        <li data-i18n="pent-item2"><span class="bullet">▸</span> Burp Suite : Analyse de requêtes HTTP/S
+                        </li>
+                        <li data-i18n="pent-item3"><span class="bullet">▸</span> Reconnaissance : OSINT & Énumération
+                            (Nmap)</li>
+                        <li data-i18n="pent-item4"><span class="bullet">▸</span> Analyse Réseau : Wireshark & Responder
+                        </li>
+                        <li data-i18n="pent-item5"><span class="bullet">▸</span> Rédaction de livrables d'audit
+                            technique</li>
+                    </ul>
+                </div>
+
+                <!-- Challenges & CTF -->
+                <div class="synthesis-card pixel-card">
+                    <div class="synthesis-header">
+                        <span class="synthesis-icon">■</span>
+                        <h3 class="synthesis-category" data-i18n="cat-ctf">CHALLENGES & CTF</h3>
+                    </div>
+                    <p style="font-size: 0.65rem; color: var(--color-text); margin-bottom: 1rem; line-height: 1.4;">
+                        Root-Me, Hack The Box, OverTheWire, OSINT4Fun, Hacker101, Trace Labs, Maltego, Oscar Zulu,
+                        IrisCTF, StarpwnCTF, SekaiCTF...
+                    </p>
+                    <ul class="synthesis-list">
+                        <li data-i18n="ctf-item1"><span class="bullet">▸</span> Promotion des métiers de la Cyber pour
+                            les femmes</li>
                     </ul>
                 </div>
 
@@ -216,13 +256,293 @@
                 <div class="synthesis-card pixel-card">
                     <div class="synthesis-header">
                         <span class="synthesis-icon">■</span>
-                        <h3 class="synthesis-category">HARDWARE & ELECTRONIQUE</h3>
+                        <h3 class="synthesis-category" data-i18n="cat-hardware">HARDWARE & ELECTRONIQUE</h3>
                     </div>
                     <ul class="synthesis-list">
-                        <li><span class="bullet">▸</span> Projets Arduino : Contrôle LED & Servo-moteurs</li>
-                        <li><span class="bullet">▸</span> Initiation à l'électronique de loisir</li>
+                        <li data-i18n="hard-item1"><span class="bullet">▸</span> Projets Arduino : Contrôle LED &
+                            Servo-moteurs</li>
+                        <li data-i18n="hard-item2"><span class="bullet">▸</span> Initiation à l'électronique de loisir
+                        </li>
                     </ul>
                 </div>
+            </div>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="doc" class="content-section pixel-box highlight-section">
+            <h2 class="section-title trophy-title">
+                <span class="trophy-icon">▣</span>
+                <span data-i18n="title-doc">DOCUMENTATION_GLPI.LOG</span>
+                <span class="trophy-icon">▣</span>
+            </h2>
+            <div class="achievement-unlocked">
+                <span class="blink-text" data-i18n="subtitle-doc">★ SUPPORT INFORMATIQUE & INVENTAIRE ★</span>
+            </div>
+
+            <div class="terminal-text doc-content">
+                <p><span class="prompt">$</span> cat /home/bobby/docs/glpi_inventory.md</p>
+
+                <h2>Compétences mises en œuvre</h2>
+                <ul>
+                    <li>Recenser et identifier les ressources numériques</li>
+                    <li>Mettre en place un service informatique</li>
+                    <li>Documenter une procédure technique</li>
+                    <li>Déployer un service en environnement Linux</li>
+                </ul>
+
+                <h2>Contexte</h2>
+                <p>Dans le cadre de notre formation en BTS SIO, nous avons réalisé la mise en place d’un outil de gestion de parc informatique à l’aide de GLPI afin de centraliser l’inventaire matériel et logiciel d’un parc informatique.</p>
+                <p>Cette solution permet d’automatiser la collecte d’informations des postes clients grâce à l’agent GLPI et d’améliorer la gestion globale du système d’information.</p>
+
+                <h2>Démarche suivie</h2>
+                <p>Pour réaliser cette installation, plusieurs étapes ont été nécessaires :</p>
+                <ol>
+                    <li>Préparation de la machine virtuelle Debian servant de serveur.</li>
+                    <li>Installation de la pile logicielle Apache / MariaDB / PHP.</li>
+                    <li>Déploiement de GLPI sur le serveur web.</li>
+                    <li>Configuration de la base de données dédiée.</li>
+                    <li>Mise en place du plugin GLPI Inventory.</li>
+                    <li>Déploiement de l’agent GLPI sur une machine cliente.</li>
+                    <li>Test de remontée d’inventaire vers la plateforme.</li>
+                </ol>
+
+                <h3>Installation et configuration de GLPI + Agent (Debian 13)</h3>
+                <h4>1. Préparation de la VM serveur (Debian 13)</h4>
+                <p>Mise à jour du système et installation des paquets de base :</p>
+                <pre><code>sudo apt update && sudo apt upgrade -y
+sudo apt install -y apache2 mariadb-server unzip wget curl</code></pre>
+                <div class="doc-warning">
+                    <strong>⚠️ Attention :</strong> curl ou wget peuvent manquer sur debian → pensez à les installer.
+                </div>
+
+                <p>Installation de PHP et des extensions requises :</p>
+                <pre><code>sudo apt install -y php php-cli php-common php-mysql php-mbstring php-curl php-xml php-gd php-intl php-zip php-bz2</code></pre>
+                <p>attention au version</p>
+                <p>Vérifier les modules chargés :</p>
+                <pre><code>php -m | grep -E 'xml|dom|simplexml'</code></pre>
+                <div class="doc-warning">
+                    <strong>⚠️ Attention :</strong> Sans php-xml → l’installateur GLPI bloquera.
+                </div>
+
+                <h4>2. Configuration de MariaDB</h4>
+                <p>Connexion en root :</p>
+                <pre><code>sudo mysql -u root -p</code></pre>
+                <p>Création de l’utilisateur et de la base pour GLPI :</p>
+                <pre><code>CREATE DATABASE glpi CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'glpi'@'localhost' IDENTIFIED BY 'MotDePasseFort!';
+GRANT ALL PRIVILEGES ON glpi.* TO 'glpi'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;</code></pre>
+                <div class="doc-warning">
+                    <strong>⚠️ Attention :</strong> Ne pas utiliser root dans l’installateur GLPI → créer un utilisateur dédié est plus propre.
+                </div>
+
+                <h4>3. Installation de GLPI</h4>
+                <p>glpi <br> &lt;Mot_de_passe_administrateur&gt; : pour acceder a glpi</p>
+                <p>Télécharger l’archive depuis GitHub :</p>
+                <pre><code>cd /tmp
+wget https://github.com/glpi-project/glpi/releases/download/10.0.20/glpi-10.0.20.tgz</code></pre>
+                <p>faire attention a decoloresser dans le bon repertoire </p>
+                <p>Décompresser et déplacer :</p>
+                <pre><code>tar -xvzf glpi-10.0.20.tgz
+sudo mv glpi /var/www/</code></pre>
+                <p>Droits d’accès :</p>
+                <pre><code>sudo chown -R www-data:www-data /var/www/glpi
+sudo chmod -R 755 /var/www/glpi</code></pre>
+                <div class="doc-warning">
+                    <strong>⚠️ Attention :</strong> Obligatoire : les dossiers config, files, marketplace doivent appartenir à www-data, sinon GLPI bloque à l’installation.
+                </div>
+
+                <h4>4. Configuration Apache (VirtualHost)</h4>
+                <p>Créer le fichier de configuration :</p>
+                <pre><code>sudo nano /etc/apache2/sites-available/glpi.conf</code></pre>
+                <p>Contenu :</p>
+                <pre><code>&lt;VirtualHost *:80&gt;
+    ServerName glpi.localhost
+    ServerAlias 192.168.X.X
+    DocumentRoot /var/www/glpi/public
+    &lt;Directory /var/www/glpi/public&gt;
+        Require all granted
+        RewriteEngine On
+        RewriteCond %{HTTP:Authorization} ^(.+)$
+        RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteRule ^(.*)$ index.php [QSA,L]
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</code></pre>
+                <p>attention a bien verifier que les lignes commenté sont bien commentée et que ca pointe bien vers lz bonne ip.</p>
+                <p>Activer le site et le module rewrite :</p>
+                <pre><code>sudo a2enmod rewrite
+sudo a2ensite glpi.conf
+sudo systemctl reload apache2</code></pre>
+                <div class="doc-warning">
+                    <strong>⚠️ Attention :</strong> Vérifier la config :
+                </div>
+                <pre><code>sudo apache2ctl -S</code></pre>
+
+                <h4>5. Installation GLPI via l’interface Web</h4>
+                <p>Aller sur : http://192.168.X.X/</p>
+                <p>Suivre l’installateur (choisir la base glpi, user glpi).</p>
+                <p>Finir la configuration et se connecter avec :<br>
+                user : glpi<br>
+                pass : glpi</p>
+
+                <h4>6. Activation de la Marketplace & Plugin Inventory</h4>
+                <p>Créer un compte sur GLPI Network.</p>
+                <p>Renseigner la clé dans Configuration → Générale → Marketplace.</p>
+                <p>Installer et activer le plugin GLPI Inventory.</p>
+                <div class="doc-warning">
+                    <strong>⚠️ Attention :</strong> Ne pas oublier de cliquer sur Activer l’inventaire dans le plugin → sinon les agents seront refusés.
+                </div>
+
+                <h4>7. Installation de l’agent GLPI (sur une autre VM Debian)</h4>
+                <p>Télécharger l’agent : <br>
+                pareil ici toujours verifier que le lien vers le telechargement marche : une simple recherche suffit.</p>
+                <pre><code>wget https://github.com/glpi-project/glpi-agent/releases/download/1.15/glpi-agent-1.15-linux-installer.pl -O glpi-agent.pl
+sudo perl glpi-agent.pl</code></pre>
+                <p>il demande :<br>
+                Provide an url to configure GLPI server:<br>
+                > http://192.168.1.18</p>
+                <p>Provide a path to configure local inventory run or leave it empty: leave empty</p>
+                <p>Provide a tag to configure or leave it empty: leave empty</p>
+                <p>Vérifier le service :</p>
+                <pre><code>systemctl status glpi-agent</code></pre>
+                <div class="doc-warning">
+                    <strong>⚠️ Attention :</strong> Si le service ne démarre pas → vérifier perl et les dépendances.
+                </div>
+
+                <h4>8. Lancer un inventaire</h4>
+                <p>Depuis la machine cliente :</p>
+                <pre><code>sudo glpi-agent --server http://192.168.X.X/marketplace/glpiinventory/ --force --debug</code></pre>
+                <div class="doc-warning">
+                    <strong>⚠️ Attention :</strong> Si erreur 403 Forbidden →
+                </div>
+                <ul>
+                    <li>Vérifier que le plugin GLPI Inventory est activé côté serveur.</li>
+                    <li>Vérifier que l’URL est bien http://IP/marketplace/glpiinventory/ (et pas /glpi/...).</li>
+                </ul>
+
+                <h4>9. Vérification dans GLPI</h4>
+                <p>Aller dans Parc → Ordinateurs.</p>
+                <p>La machine cliente doit apparaître automatiquement.</p>
+                <p>Export possible en CSV / PDF pour le rapport.</p>
+
+                <h2>✅ Résumé des points d’attention</h2>
+                <div class="doc-warning"><strong>⚠️ Attention :</strong> Installer tous les modules PHP (php-xml, php-mbstring, php-mysql...) sinon blocage.</div>
+                <div class="doc-warning"><strong>⚠️ Attention :</strong> Toujours donner les droits à www-data sur /var/www/glpi.</div>
+                <div class="doc-warning"><strong>⚠️ Attention :</strong> Ne pas oublier d’activer le plugin Inventory dans GLPI.</div>
+                <div class="doc-warning"><strong>⚠️ Attention :</strong> L’URL pour l’agent est bien /marketplace/glpiinventory/.</div>
+                <div class="doc-warning"><strong>⚠️ Attention :</strong> En cas de problème → vérifier les logs :</div>
+                <pre><code>/var/log/apache2/error.log
+/var/log/apache2/access.log
+/var/log/glpi-agent/</code></pre>
+
+                <hr style="border: 1px dashed var(--color-border); margin: var(--spacing-lg) 0;">
+
+                <h3>Lancer le .msi en administrateur via PowerShell</h3>
+                <p>Ouvrir <strong>PowerShell en administrateur</strong> (<em>clic droit → Exécuter en tant qu’administrateur</em>) puis exécuter :</p>
+                <pre><code>msiexec /i "C:\Users\bobby\Downloads\glpi-agent-1.15-x64.msi"</code></pre>
+                <div class="doc-warning">
+                    <strong>⚠️ Attention :</strong>
+                    <ul>
+                        <li>Si l’option <em>Exécuter en tant qu’administrateur</em> n’apparaît pas dans l’explorateur Windows, il faut passer par PowerShell.</li>
+                        <li>Adapter le chemin du <code>.msi</code> si nécessaire.</li>
+                    </ul>
+                </div>
+
+                <hr style="border: 1px dashed var(--color-border); margin: var(--spacing-lg) 0;">
+
+                <h2>2. Navigation dans le dossier d’installation</h2>
+                <pre><code>cd "C:\Program Files\GLPI-Agent"</code></pre>
+
+                <hr style="border: 1px dashed var(--color-border); margin: var(--spacing-lg) 0;">
+
+                <h2>3. Forcer un inventaire manuel</h2>
+                <pre><code>.\glpi-agent.bat --server http://192.168.1.14/marketplace/glpiinventory/</code></pre>
+                <h3>Explications des options</h3>
+                <ul>
+                    <li><code>--server</code> → URL de ton serveur GLPI (<strong>adapter l’IP si elle change</strong>)</li>
+                    <li><code>--debug</code> → active les logs détaillés dans la console</li>
+                    <li><code>--force</code> → force l’envoi de l’inventaire immédiatement</li>
+                </ul>
+
+                <hr style="border: 1px dashed var(--color-border); margin: var(--spacing-lg) 0;">
+
+                <h2>4. Redémarrer le service Windows</h2>
+                <p><code>Restart-Service glpi-agent</code></p>
+                <h3>Vérifier que le service tourne bien</h3>
+                <p><code>Get-Service glpi-agent</code></p>
+                <p>Résultat attendu :</p>
+                <pre><code>Status   Name               DisplayName ------   ----               ----------- Running  glpi-agent         GLPI Agent</code></pre>
+
+                <hr style="border: 1px dashed var(--color-border); margin: var(--spacing-lg) 0;">
+
+                <h2>✅ Workflow résumé</h2>
+                <ol>
+                    <li>j'au apres lancé les commandes classiques et ca a marché <br>
+                        commande pour lancé le msi en mode admin sur powershelll (en etant deja en admin) <br>
+                        <code>C:\Users\bobby\Downloads\glpi-agent-1.15-x64.msi</code>
+                    </li>
+                    <li>Aller dans le dossier (toujours necessaire) <br>
+                        <code>cd "C:\Program Files\GLPI-Agent"</code>
+                    </li>
+                    <li>Forcer un inventaire <br>
+                        <code>.\glpi-agent.bat --server http://192.168.1.14/marketplace/glpiiventory</code>
+                    </li>
+                </ol>
+                <p>important : mettre le bon url si par exemple tu as configuré sur l'installer un autre url met celui que tu as mis</p>
+                <p>astuce : mettre plusieurs url lorsque tu fais l'installation avec le .msi, par exemple mettre http://192.168.1.18/glpi, http://192.168.1.18, http://192.168.1.18/marketplace/glpiinventory</p>
+                <p>6. Redémarrer le service <br>
+                    <code>Restart-Service glpi-agent</code>
+                </p>
+
+                <hr style="border: 1px dashed var(--color-border); margin: var(--spacing-lg) 0;">
+
+                <p>bien penser a activer l'inventaire dans administration > inventaire et c'est la premiere ligne </p>
+
+                <p>commande pour installer Tailscale sur Debian : </p>
+                <pre><code>curl -fsSL https://tailscale.com/install.sh | sh sudo tailscale up</code></pre>
+
+                <ul>
+                    <li>sur Windows allez sur Tailscale et télécharger le programme .exe</li>
+                    <li>après connection a Tailscale sur le compte de baptiste on lance le msi en mode admin pour les modifications d'adresse IP et pointer sur le serveur GLPI de Baptiste.</li>
+                </ul>
+
+                <h3>Sur Windows</h3>
+                <p>se mettre des les Downloads et charger le msi</p>
+                <pre><code>cd "C:\Program Files\GLPI-Agent"</code></pre>
+                <pre><code>C:\Users\bobby\Downloads\glpi-agent-1.15-x64.msi</code></pre>
+
+                <ul>
+                    <li>retourner dans le bon chemin de l'agent GLPI et tapez :</li>
+                </ul>
+                <pre><code>cd "C:\Program Files\GLPI-Agent"
+Restart-Service glpi-agent</code></pre>
+
+                <ul>
+                    <li>Puis :</li>
+                </ul>
+                <pre><code>.\glpi-agent.bat --server http://192.168.X.XX/marketplace/glpiinventory/ --force --debug</code></pre>
+                <p>Mettre le bon chemin, donc <code>http://192.168.X.XX</code> ou <code>http://192.168.X.XX/marketplace/glpiinventory/</code> ⇒ chemin qu'on a mis sur l'installer lors de l'installation du msi.</p>
+
+                <ul>
+                    <li>Vérifier que le service tourne bien</li>
+                </ul>
+                <p><code>Get-Service glpi-agent</code></p>
+                <p>Résultat attendu :</p>
+                <pre><code>Status   Name               DisplayName ------   ----               ----------- Running  glpi-agent         GLPI Agent</code></pre>
+
+                <h3>Sur Debian :</h3>
+                <pre><code>sudo perl glpi-agent.pl</code></pre>
+                <p>normalement l'agent est déjà installé on a juste a changé l'IP et mettre celle du serveur de baptiste.</p>
+                <pre><code>sudo glpi-agent --server http://192.168.X.XX/marketplace/glpiinventory/ --force --debug</code></pre>
+                <p>ou mettre les chemin que Baptiste a mis lors de son installation du serveur GLPI <br>
+                (ici on a pas eu forcément besoin de mettre marketplace/glpiinventory)</p>
+
+                <h2>Conclusion</h2>
+                <p>Cette réalisation nous a permis de découvrir le fonctionnement de GLPI et de comprendre la mise en place d’un outil de gestion de parc informatique.</p>
+                <p>Nous avons pu apprendre à configurer un serveur web sous Linux, déployer une application web complexe, gérer une base de données MariaDB et automatiser l’inventaire d’un parc grâce à l’agent GLPI.</p>
+                <p>Cette expérience nous a également permis de renforcer nos compétences en documentation technique et en déploiement de services.</p>
             </div>
         </section>
 

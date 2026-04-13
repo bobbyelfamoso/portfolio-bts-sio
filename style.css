@@ -1360,35 +1360,40 @@ body {
 }
 
 .doc-content {
-    background: rgba(0, 5, 0, 0.9);
+    background: rgba(0, 20, 10, 0.9);
     padding: var(--spacing-lg);
-    border: 2px solid var(--color-border);
+    border: 3px solid var(--color-border);
     margin-top: var(--spacing-md);
+    color: var(--color-text);
 }
 
 .doc-content h2 {
     color: var(--color-accent);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: var(--spacing-lg) 0 var(--spacing-md);
     border-bottom: 2px solid var(--color-border);
-    display: inline-block;
+    display: block;
+    text-shadow: 0 0 10px var(--color-glow);
 }
 
 .doc-content h3 {
     color: var(--color-secondary);
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: var(--spacing-md) 0 var(--spacing-sm);
+    text-shadow: 0 0 5px var(--color-glow);
 }
 
 .doc-content h4 {
     color: var(--color-info);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: var(--spacing-md) 0 var(--spacing-xs);
+    text-shadow: 0 0 5px var(--color-info);
 }
 
-.doc-content p {
+.doc-content p, .doc-content li, .doc-content ol {
+    color: var(--color-text);
     margin-bottom: var(--spacing-md);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     line-height: 1.6;
 }
 

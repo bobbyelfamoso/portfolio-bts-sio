@@ -41,9 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.nav-btn').forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            const target = document.querySelector(link.getAttribute('href'));
+            const targetId = link.getAttribute('href');
+            const target = document.querySelector(targetId);
             if (target) {
-                window.scrollTo({ top: target.offsetTop - 20, behavior: 'smooth' });
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Force visibility class just in case intersection observer misses it
+                setTimeout(() => {
+                    target.classList.add('visible');
+                }, 500);
             }
         });
     });

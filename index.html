@@ -281,9 +281,9 @@
 
             <div class="terminal-text doc-content">
                 <p><span class="prompt">$</span> cat /home/bobby/docs/glpi_inventory.md</p>
-
-                <h2>Compétences mises en œuvre</h2>
-                <ul>
+                <div class="doc-scroll-container">
+                    <h2>Compétences mises en œuvre</h2>
+                    <ul>
                     <li>Recenser et identifier les ressources numériques</li>
                     <li>Mettre en place un service informatique</li>
                     <li>Documenter une procédure technique</li>
@@ -543,6 +543,7 @@ Restart-Service glpi-agent</code></pre>
                 <p>Cette réalisation nous a permis de découvrir le fonctionnement de GLPI et de comprendre la mise en place d’un outil de gestion de parc informatique.</p>
                 <p>Nous avons pu apprendre à configurer un serveur web sous Linux, déployer une application web complexe, gérer une base de données MariaDB et automatiser l’inventaire d’un parc grâce à l’agent GLPI.</p>
                 <p>Cette expérience nous a également permis de renforcer nos compétences en documentation technique et en déploiement de services.</p>
+                </div>
             </div>
         </section>
 
@@ -585,6 +586,19 @@ Restart-Service glpi-agent</code></pre>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Fallback for local file access (CORS/Security)
+        window.addEventListener('scroll', function() {
+            document.querySelectorAll('.content-section').forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+        // Initial check
+        window.dispatchEvent(new Event('scroll'));
+    </script>
 </body>
 
 </html>

@@ -1367,6 +1367,29 @@ body {
     color: var(--color-text);
 }
 
+.doc-scroll-container {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) var(--color-dark);
+}
+
+.doc-scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.doc-scroll-container::-webkit-scrollbar-track {
+    background: var(--color-dark);
+    border: 1px solid var(--color-border);
+}
+
+.doc-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    box-shadow: 0 0 5px var(--color-glow);
+}
+
 .doc-content h2 {
     color: var(--color-accent);
     font-size: 1.2rem;

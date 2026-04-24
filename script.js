@@ -108,32 +108,38 @@ const translations = {
         'subtitle-alternance': '★ MISSIONS EN ENTREPRISE ★',
         'title-projets': 'SIDE_PROJECTS_&_LABS.EXE',
         'subtitle-projets': '★ HACKING, HARDWARE & PENTEST ★',
-        'title-doc': 'DOCUMENTATION_GLPI.LOG',
+        'title-doc': 'DOCUMENTATION_GLPI.LOG <span class="comp-badge">[C1, C4]</span>',
+        'title-doc-glpi': 'DOCUMENTATION_GLPI.LOG <span class="comp-badge">[C1, C4]</span>',
+        'title-doc-c7': 'SUPPORT_TICKETING.LOG <span class="comp-badge">[C7]</span>',
+        'title-doc-c11': 'VISIBILITY_SEO.LOG <span class="comp-badge">[C11]</span>',
+        'title-doc-c14': 'PROJECT_PLANNING.LOG <span class="comp-badge">[C14]</span>',
+        'title-doc-c17': 'SERVICE_DEPLOYMENT.LOG <span class="comp-badge">[C17]</span>',
+        'title-doc-e4': 'TABLEAU_SYNTHESE_E4.SYS',
         'subtitle-doc': '★ SUPPORT INFORMATIQUE & INVENTAIRE ★',
         // Blocs Cards
-        'b1-title': 'Gérer le patrimoine informatique',
-        'b1-item1': '▸ Installation serveur GLPI (Scolaire)',
-        'b1-item2': "▸ OSINT & Cartographie de l'environnement cible (Stage)",
-        'b1-item3': "▸ Identification des surfaces d'attaque (Nmap) (Stage)",
-        'b2-title': 'Répondre aux incidents',
+        'b1-title': 'Gérer le patrimoine informatique <span class="comp-badge">[C1, C4, C5]</span>',
+        'b1-item1': '▸ Installation serveur GLPI et agents (C1, C4)',
+        'b1-item2': '▸ Réalisation de snapshots de VM (C5)',
+        'b2-title': 'Répondre aux incidents <span class="comp-badge">[C2]</span>',
         'b2-item1': '▸ Support utilisateur niveau 1/2 (Scolaire)',
-        'b2-item2': '▸ Analyse de trafic réseau & Surveillance passive (Wireshark) (Stage)',
-        'b3-title': 'Développer la présence en ligne',
-        'b3-item1': '▸ Déploiement GLPI sur Microsoft Azure (Scolaire)',
+        'b2-item2': '▸ Analyse de trafic réseau & Surveillance passive (Wireshark) (C2)',
+        'b3-title': 'Développer la présence en ligne <span class="comp-badge">[C3, C10, C11, C17]</span>',
+        'b3-item1': '▸ Déploiement GLPI sur Microsoft Azure (C17)',
         'b3-item2': '▸ Pentest Web : Fuzzing & Exploitation de vulnérabilités (Stage)',
-        'b3-item3': '▸ Analyse de requêtes HTTP/S (Burp Suite) (Stage)',
-        'b3-item4': '▸ Promotion via réseaux sociaux',
-        'b4-title': 'Travailler en mode projet',
-        'b4-item1': "▸ Élaboration de scénarios d'intrusion et tests (Stage)",
-        'b4-item2': "▸ Rédaction de livrables d'audit technique (Stage)",
-        'b4-item3': "▸ Coordination d'équipe agile (Scolaire)",
-        'b5-title': 'Mettre à disposition un service',
-        'b5-item1': "▸ Tests de robustesse de l'authentification réseau (Responder) (Stage)",
-        'b5-item2': '▸ Exportation et migration de base de données SQL (Scolaire)',
-        'b5-item3': '▸ Configuration services réseaux',
-        'b6-title': 'Développement professionnel',
-        'b6-item1': "▸ Veille sur les CVE & nouvelles techniques d'attaque (Stage)",
-        'b6-item2': '▸ Formation continue & Certifications (Scolaire)',
+        'b3-item3': '▸ Promotion via Instagram @workfishofficial (C10)',
+        'b3-item4': "▸ Analyse d'audience via Google Analytics (C11)",
+        'b3-item5': '▸ Design UX/UI Landing Page (C3)',
+        'b4-title': 'Travailler en mode projet <span class="comp-badge">[C15, C16]</span>',
+        'b4-item1': '▸ Rédiger le cahier des charges (C16)',
+        'b4-item2': '▸ Gestion du dépôt GitHub & Agile (C15)',
+        'b4-item3': '▸ Fine-tuning de modèles IA (C16)',
+        'b5-title': 'Mettre à disposition un service <span class="comp-badge">[C12, C13, C14, C17]</span>',
+        'b5-item1': '▸ Déploiement PHP/SQL sur Netify (C17)',
+        'b5-item2': "▸ Développement d'API & User Flow (C12, C13)",
+        'b5-item3': '▸ Dashboard de statistiques (C14)',
+        'b6-title': 'Développement professionnel <span class="comp-badge">[C18]</span>',
+        'b6-item1': "▸ Présentation orale d'architecture (C18)",
+        'b6-item2': '▸ Veille technologique & Certifications',
         // Apprenticeship
         'alt-item1': '▸ Gestion des onboarding / offboarding sur Azure et Intra',
         'alt-item2': '▸ Préparation user guide KeePass / Outil GRC',
@@ -166,32 +172,38 @@ const translations = {
         'subtitle-alternance': '★ CORPORATE MISSIONS ★',
         'title-projets': 'SIDE_PROJECTS_&_LABS.EXE',
         'subtitle-projets': '★ HACKING, HARDWARE & PENTEST ★',
-        'title-doc': 'GLPI_DOCUMENTATION.LOG',
+        'title-doc': 'GLPI_DOCUMENTATION.LOG <span class="comp-badge">[C1, C4]</span>',
+        'title-doc-glpi': 'GLPI_DOCUMENTATION.LOG <span class="comp-badge">[C1, C4]</span>',
+        'title-doc-c7': 'SUPPORT_TICKETING.LOG <span class="comp-badge">[C7]</span>',
+        'title-doc-c11': 'VISIBILITY_SEO.LOG <span class="comp-badge">[C11]</span>',
+        'title-doc-c14': 'PROJECT_PLANNING.LOG <span class="comp-badge">[C14]</span>',
+        'title-doc-c17': 'SERVICE_DEPLOYMENT.LOG <span class="comp-badge">[C17]</span>',
+        'title-doc-e4': 'E4_SYNTHESIS_TABLE.SYS',
         'subtitle-doc': '★ IT SUPPORT & INVENTORY ★',
         // Blocs Cards
-        'b1-title': 'Manage IT Estate',
-        'b1-item1': '▸ GLPI Server & Agent installation (Academic)',
-        'b1-item2': "▸ OSINT & Target environment mapping (Internship)",
-        'b1-item3': "▸ Attack surface identification (Nmap) (Internship)",
-        'b2-title': 'Respond to incidents',
+        'b1-title': 'Manage IT Estate <span class="comp-badge">[C1, C4, C5]</span>',
+        'b1-item1': '▸ GLPI Server & Agent installation (C1, C4)',
+        'b1-item2': '▸ VM Snapshots & Backup (C5)',
+        'b2-title': 'Respond to incidents <span class="comp-badge">[C2]</span>',
         'b2-item1': '▸ Level 1/2 User Support (Academic)',
-        'b2-item2': '▸ Network traffic analysis & Passive monitoring (Wireshark) (Internship)',
-        'b3-title': 'Develop Online Presence',
-        'b3-item1': '▸ GLPI deployment on Microsoft Azure (Academic)',
+        'b2-item2': '▸ Network traffic analysis (Wireshark) (C2)',
+        'b3-title': 'Develop Online Presence <span class="comp-badge">[C3, C10, C11, C17]</span>',
+        'b3-item1': '▸ GLPI deployment on Microsoft Azure (C17)',
         'b3-item2': '▸ Web Pentest: Fuzzing & Vulnerability Exploitation (Internship)',
-        'b3-item3': '▸ HTTP/S request analysis (Burp Suite) (Internship)',
-        'b3-item4': '▸ Social media promotion',
-        'b4-title': 'Work in Project Mode',
-        'b4-item1': "▸ Development of intrusion scenarios and tests (Internship)",
-        'b4-item2': "▸ Technical audit reports and deliverables (Internship)",
-        'b4-item3': "▸ Agile team coordination (Academic)",
-        'b5-title': 'Provide an IT Service',
-        'b5-item1': "▸ Network authentication robustness tests (Responder) (Internship)",
-        'b5-item2': '▸ SQL Database migration and export (Academic)',
-        'b5-item3': '▸ Network services configuration',
-        'b6-title': 'Professional Development',
-        'b6-item1': "▸ Monitoring CVEs & new attack techniques (Internship)",
-        'b6-item2': '▸ Continuous Training & Certifications (Academic)',
+        'b3-item3': '▸ Instagram promotion @workfishofficial (C10)',
+        'b3-item4': '▸ Audience analysis via Google Analytics (C11)',
+        'b3-item5': '▸ UX/UI Landing Page Design (C3)',
+        'b4-title': 'Work in Project Mode <span class="comp-badge">[C15, C16]</span>',
+        'b4-item1': '▸ Requirements specification (C16)',
+        'b4-item2': '▸ GitHub repository management & Agile (C15)',
+        'b4-item3': '▸ AI model fine-tuning (C16)',
+        'b5-title': 'Provide an IT Service <span class="comp-badge">[C12, C13, C14, C17]</span>',
+        'b5-item1': '▸ PHP/SQL deployment on Netify (C17)',
+        'b5-item2': '▸ API Development & User Flow (C12, C13)',
+        'b5-item3': '▸ Statistics Dashboard (C14)',
+        'b6-title': 'Professional Development <span class="comp-badge">[C18]</span>',
+        'b6-item1': '▸ Architectural oral presentation (C18)',
+        'b6-item2': '▸ Continuous Training & Certifications',
         // Apprenticeship
         'alt-item1': '▸ Onboarding / offboarding management on Azure and Intra',
         'alt-item2': '▸ KeePass / GRC Tool user guide preparation',
@@ -226,12 +238,51 @@ function switchLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang] && translations[lang][key]) {
-            el.textContent = translations[lang][key];
+            el.innerHTML = translations[lang][key];
         }
     });
 
     // Save preference
     localStorage.setItem('preferred-lang', lang);
+}
+
+// Global function to switch between documents in the Documentation section
+function showDoc(docId) {
+    // Hide all doc items
+    document.querySelectorAll('.doc-item').forEach(doc => {
+        doc.classList.remove('active');
+    });
+
+    // Remove active class from all nav buttons
+    document.querySelectorAll('.doc-nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // Show selected doc
+    const targetDoc = document.getElementById(`doc-${docId}`);
+    if (targetDoc) {
+        targetDoc.classList.add('active');
+    }
+
+    // Set active class on the corresponding button
+    const activeBtn = Array.from(document.querySelectorAll('.doc-nav-btn')).find(btn => 
+        btn.getAttribute('onclick').includes(`'${docId}'`)
+    );
+    if (activeBtn) {
+        activeBtn.classList.add('active');
+    }
+
+    // Update the documentation section title
+    const titleEl = document.getElementById('doc-active-title');
+    if (titleEl) {
+        // Find current language
+        const lang = localStorage.getItem('preferred-lang') || 'fr';
+        const titleKey = `title-doc-${docId}`;
+        if (translations[lang] && translations[lang][titleKey]) {
+            titleEl.innerHTML = translations[lang][titleKey];
+            titleEl.setAttribute('data-i18n', titleKey);
+        }
+    }
 }
 window.switchLanguage = switchLanguage;
 

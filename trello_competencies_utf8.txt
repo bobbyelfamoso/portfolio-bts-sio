@@ -1,0 +1,75 @@
+﻿C1:
+  - C1-faire l'inventaire des logiciel glpi
+  - ranger mieux le github pour qu'on puisse s'y retrouver  C1
+  - C1-faire l'inventaire des ordi glpi
+  - crÚer un read me ou verifier si c'est a jour et si ca correspond  C1
+  - pour l'Úquipe infra : s'assurer que tout le monde travaille sur une vm.
+C2:
+  - poser les bonnes questions de sÚcuritÚ pour avoir une bonne vision de ce qui est conforme et non conforme pour ce qu'on a deja publiÚ C2
+  - Identifier les amÚliorations nÚcessaires dans lÆarchitecture actuelle du projet :  C2
+  - gÚnÚration de clÚ Api pour l'IA
+  - a integrer dans la landing page : une presentation de l'entreprises et ses services, ses valeurs, sa conformitÚ au rgpd, contact form et reseaux sociaux C2 , C12
+  - une fois les bonnes questions posÚes, voir ce qu'il nous reste a faire et faire des recherches sur le rgpd et voir comment implementer les bonnes pratique a notre service C2
+  - pour l'Úquipe infra : s'assurer que tout le monde travaille sur une vm.
+C3:
+  - AmÚliorer la page dÆaccueil pour mieux prÚsenter les fonctionnalitÚs du projet : C3
+  - C3-assigner les users au groupe
+  - C3-faire l'inventaire des user
+C4:
+  - Úquipe infra : s'assurer que glpi est installÚ sur un ordi. C4 C17
+C5:
+  - equipe infra : sauvegarde des flashcard : implementation bdd pour les logs et l'historique e dÚpot de dossier et de chat ia.
+C6:
+  - Identifier prÚcisÚment les statistiques que le dashboard devra afficher :  C6, C14
+  - DÚfinir les donnÚes qui doivent Ûtre enregistrÚes lors dÆune session de flashcards : C6, C13
+  - patcher les faille avec l'ia pour etre sur qu'on ne peut pas demander tout et n'importe quoi C6
+C7:
+  - Úquipe support : lien du titre secret : https://h0ag.alwaysdata.net  tester 10 possibilitÚs et faire un feedback C7
+C10:
+  - creer des pages sur les reseaux sociaux pour promouvoir l'entreprise et ses services C10
+  - generer des pub pour promouvoir notre service C10
+  - CrÚation instagram https://www.instagram.com/workfishofficial/ C10
+C11:
+  - equipe marketing : brainstorm sur idÚes gui, ux/ui
+  - Mettre le site et les services sur Google analytics voir si on doit mettre juste le site o¨ juste les services ou les deux C11
+  - DÚfinir les conditions dÆaccÞs au dashboard :  C13, C11
+C12:
+  - equipe marketing : brainstorm sur idÚes gui, ux/ui
+  - mettre jasmine sur la creation d'un site classique sur lequel on aura des  liens vers nos 2 services C12
+  - DÚfinir prÚcisÚment le r¶le de lÆAPI interne dans le projet FlashMind : C12, C13
+  - DÚvelopper une API reliÚe Ó une base de donnÚes C12
+  - DÚvelopper un frontend qui consomme le backend C12
+  - a integrer dans la landing page : une presentation de l'entreprises et ses services, ses valeurs, sa conformitÚ au rgpd, contact form et reseaux sociaux C2 , C12
+C13:
+  - DÚfinir lÆobjectif prÚcis du dashboard utilisateur : C13, C16
+  - DÚfinir prÚcisÚment le r¶le de lÆAPI interne dans le projet FlashMind : C12, C13
+  - fidÚlisation du user, systÞme de points et rÚcompense C13
+  - Identifier prÚcisÚment les statistiques que le dashboard devra afficher :  C6, C14
+  - DÚfinir le userflw pour un uer connectÚ : C13
+  - crÚer un deuxieme service en parallÞle C13
+  - DÚfinir les donnÚes qui doivent Ûtre enregistrÚes lors dÆune session de flashcards : C6, C13
+  - DÚfinir les endpoints nÚcessaires pour lÆAPI : C13
+  - DÚfinir les conditions dÆaccÞs au dashboard :  C13, C11
+  - DÚfinir le parcours utilisateur complet (user flow) pour un utilisateur non connectÚ :  C13
+  - boite a idÚe faire reflechir toute l'equipe a uine 2e service C13
+  - DÚfinir lÆemplacement de la page de login dans lÆarchitecture du projet : C13
+  - long terme : reflechir a un troisiÞme service potentiel C13
+C14:
+  - Identifier prÚcisÚment les statistiques que le dashboard devra afficher :  C6, C14
+C15:
+  - Mise en place, gestion du dÚp¶t github-C15 SUIVRE ET ORGANISER LE PROJET
+C16:
+  - DÚfinir lÆobjectif prÚcis du dashboard utilisateur : C13, C16
+  - fine tuning de l'ia
+  - Úquipe support : lien du titre secret : https://h0ag.alwaysdata.net  tester 10 possibilitÚs et faire un feedback C7
+  - RÚdiger le cahier des charges de la fonctionnalitÚ Dashboard : C16
+  - gÚnÚration de clÚ Api pour l'IA
+C17:
+  - Prendre un nom de domaine : pour que le nom soit plus wow C17
+  - dÚploiement github du site
+  - migration du projet site vitrine sur le github de nourith, et mettre tout le monde en collaborateur pour avoir des accÞs partagÚs C17
+  - DÚploiement du site sur Netify-C17 DEPLOYER UN SERVICE
+  - Úquipe infra : s'assurer que glpi est installÚ sur un ordi. C4 C17
+  - equipe infra : upload des cours dans tous les formats
+C18:
+  - Explication et briefing de lÆÚquipe pour prÚparer lÆoral (prÚsentation de lÆarchitecture du projet) C18

@@ -1,0 +1,8 @@
+﻿"Nom";"Entité";"Statut";"Fabricant";"Numéro de série";"Type";"Modèle";"Système d'exploitation - Nom";"Lieu";"Dernière modification";"Composants - Processeur";
+"debian";"Entité racine";"";"VMware, Inc.";"VMware-56 4d cc 5c 56 f0 3e ec-6e 2d 5d 4a 54 2c a9 90";"VMware";"VMware Virtual Platform";"Debian GNU/Linux 13 (trixie)";"";"2025-09-25 14:38";"";
+"debian";"Entité racine";"";"VMware, Inc.";"VMware-56 4d 06 63 c0 76 cd 83-94 65 8c 10 18 85 45 ef";"VMware";"VMware Virtual Platform";"Debian GNU/Linux 13 (trixie)";"";"2025-09-27 16:52";"AMD Ryzen 7 7435HS";
+"debian";"Entité racine";"";"VMware, Inc.";"VMware-56 4d 45 62 22 da 19 fd-6f 54 7b 58 3b 8b 20 83";"VMware";"VMware Virtual Platform";"Debian GNU/Linux 13 (trixie)";"";"2025-11-04 14:55";"Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz";
+"debian";"Entité racine";"";"VMware, Inc.";"VMware-56 4d eb e8 d4 e1 97 9b-2b 37 5a 74 66 38 85 5a";"VMware";"VMware Virtual Platform";"Debian GNU/Linux 12 (bookworm)";"";"2025-11-04 15:01";"Intel(R) Core(TM) i9-14900HX";
+"debianAgent";"Entité racine";"";"VMware, Inc.";"VMware-56 4d a7 a0 d4 8d 32 05-7b 5e 60 95 9d 53 ed e7";"VMware";"VMware Virtual Platform";"Debian GNU/Linux 13 (trixie)";"";"2025-11-04 14:56";"Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz";
+"debianJasmine";"Entité racine";"";"VMware, Inc.";"VMware-56 4d c6 da 6a a3 19 59-ae f1 75 5d bc bf 3d 65";"VMware";"VMware Virtual Platform";"Debian GNU/Linux 13 (trixie)";"";"2025-11-04 14:55";"Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz";
+"DESKTOP-32VL1SR";"Entité racine";"";"ASUSTeK COMPUTER INC.";"S8NRCX07893935C";"Notebook";"ASUS TUF Gaming A15 FA507NUR_FA507NUR";"Microsoft Windows 11 Professionnel";"";"2025-09-27 16:40";"AMD Ryzen 7 7435HS";

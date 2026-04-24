@@ -151,6 +151,7 @@ const translations = {
         'alt-item4': '▸ Alerting incidents credentials (CTI Darkweb) & conformité',
         'alt-item5': '▸ Animation webinar awareness Cyber',
         'alt-item6': '▸ Organisation contrôles certification ISO27001',
+        'alt-item7': '▸ Review des politiques internes (ISO27001)',
         // Projects
         'cat-pentest': 'STAGE PENTEST (02/2025 - 03/2025)',
         'pent-item1': '▸ Pentest Web : Fuzzing & Exploitation de vulnérabilités',
@@ -219,6 +220,7 @@ const translations = {
         'alt-item4': '▸ Credentials incident alerting (CTI Darkweb) & compliance',
         'alt-item5': '▸ Cyber awareness webinar hosting',
         'alt-item6': '▸ ISO27001 certification controls organization',
+        'alt-item7': '▸ Internal policy review (ISO27001)',
         // Projects
         'cat-pentest': 'PENTEST INTERNSHIP (02/2025 - 03/2025)',
         'pent-item1': '▸ Web Pentest: Fuzzing & Vulnerability Exploitation',

@@ -11,3 +11,12 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Scripts and scratch files
+*.py
+*.txt
+*.json
+!locales.json
+
+# Media/Doc examples (if not needed in repo)
+Exemple_de_documentation-1.pdf

@@ -589,6 +589,17 @@ Restart-Service glpi-agent</code></pre>
                             <p>ou mettre les chemin que Baptiste a mis lors de son installation du serveur GLPI <br>
                                 (ici on a pas eu forcément besoin de mettre marketplace/glpiinventory)</p>
 
+                             <div class="doc-image-grid">
+                                <div class="doc-image-item">
+                                    <img src="img/glpi_recensement_1.png" alt="Inventaire GLPI - Vue 1">
+                                    <p class="image-caption">Recensement automatisé du parc (Vue 1)</p>
+                                </div>
+                                <div class="doc-image-item">
+                                    <img src="img/glpi_recensement_2.png" alt="Inventaire GLPI - Vue 2">
+                                    <p class="image-caption">Détails de l'inventaire des machines</p>
+                                </div>
+                            </div>
+
                             <h2>Conclusion</h2>
                             <p>Cette réalisation nous a permis de découvrir le fonctionnement de GLPI et de comprendre
                                 la mise en place d’un outil de gestion de parc informatique.</p>
@@ -631,6 +642,18 @@ Restart-Service glpi-agent</code></pre>
                                 <li><strong>Suivi</strong> : Monitoring du statut "En cours" jusqu'à la validation du
                                     document par le support.</li>
                             </ol>
+                             <h3>Suivi des tickets dans GLPI</h3>
+                            <div class="doc-image-grid">
+                                <div class="doc-image-item">
+                                    <img src="img/glpi_dashboard.png" alt="Dashboard GLPI Flashmind">
+                                    <p class="image-caption">Dashboard de suivi de projet Flashmind</p>
+                                </div>
+                                <div class="doc-image-item">
+                                    <img src="img/glpi_tickets.png" alt="Liste des tickets GLPI">
+                                    <p class="image-caption">Gestion des tickets et priorités (Redaction livrable)</p>
+                                </div>
+                            </div>
+
                             <div class="doc-warning"><strong>⚠️ IMPORTANT :</strong> L'utilisation d'un outil de
                                 ticketing permet d'assurer une traçabilité complète des actions réalisées.</div>
                         </div>
@@ -822,6 +845,25 @@ Restart-Service glpi-agent</code></pre>
                                 <li><strong>Test de validation</strong> : Vérification que les fonctions serverless de
                                     l'IA répondent aussi vite que sur l'ancien service.</li>
                             </ol>
+                             <h3>Preuves de déploiement (Firebase & Vercel)</h3>
+                            <div class="doc-image-grid">
+                                <div class="doc-image-item">
+                                    <img src="img/firebase_deploy.png" alt="Déploiement Firebase Terminal">
+                                    <p class="image-caption">Succès du déploiement via Firebase CLI</p>
+                                </div>
+                                <div class="doc-image-item">
+                                    <img src="img/vercel_panel.png" alt="Dashboard de Déploiement Vercel">
+                                    <p class="image-caption">Dashboard Vercel : Projet Flashmind en production</p>
+                                </div>
+                            </div>
+
+                             <h3>Hébergement Statique via GitHub Pages</h3>
+                            <p>En parallèle des déploiements Serverless et Firebase, certains de nos services vitrines et documentations sont hébergés de manière purement statique sur <strong>GitHub Pages</strong>.</p>
+                            <div class="doc-image-item" style="max-width: 600px; margin: 0 auto; margin-top: 1rem;">
+                                <img src="img/github_pages.png" alt="Configuration GitHub Pages">
+                                <p class="image-caption">Configuration du déploiement statique sur GitHub Pages</p>
+                            </div>
+
                             <div class="doc-warning"><strong>⚠️ CONCLUSION :</strong> La migration vers Vercel a permis
                                 d'améliorer les temps de chargement et de simplifier notre pipeline de développement.
                             </div>

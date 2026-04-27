@@ -739,7 +739,7 @@ Restart-Service glpi-agent</code></pre>
                                 <li><strong>C14.1.3</strong> : Utiliser un outil de gestion de projet collaboratif.</li>
                             </ul>
                             <h2>Contexte</h2>
-                            <p>Le hackathon s'est déroulé sur 48 heures. Sans une planification stricte, le projet
+                            <p>Le hackathon s'est déroulé sur une durée limitée. Sans une planification stricte, le projet
                                 FlashMind n'aurait pu être livré. Nous avons adopté une méthodologie <strong>Agile
                                     (Scrum)</strong>.</p>
                             <h2>Démarche suivie</h2>
@@ -784,14 +784,14 @@ Restart-Service glpi-agent</code></pre>
                                 <li><strong>R (Pertinent/Relevant)</strong> : L'objectif doit avoir du sens pour le
                                     projet (Répondre à un besoin réel des étudiants).</li>
                                 <li><strong>T (Temporellement défini)</strong> : Une date limite est fixée. <em>Exemple
-                                        : "Livraison finale avant la fin des 48h du hackathon."</em></li>
+                                        : "Livraison finale avant la fin du hackathon."</em></li>
                             </ul>
                             <div class="doc-warning"><strong>💡 Pourquoi c'est bien ?</strong> La méthode SMART réduit
                                 l'incertitude, facilite la prise de décision et permet de rester focalisé sur les tâches
                                 à haute valeur ajoutée.</div>
 
                             <div class="doc-warning"><strong>⚠️ NOTE :</strong> La planification collaborative a été la
-                                clé pour livrer le projet FlashMind en seulement 48h.</div>
+                                clé pour livrer le projet FlashMind dans les temps impartis.</div>
                         </div>
                     </div>
 
@@ -801,72 +801,81 @@ Restart-Service glpi-agent</code></pre>
                         <div class="doc-scroll-container">
                             <h2>Compétences mises en œuvre</h2>
                             <ul>
-                                <li><strong>C17.1.1</strong> : Vérifier la conformité du service à déployer.</li>
-                                <li><strong>C17.1.2</strong> : Déployer le service (Migration de service).</li>
-                                <li><strong>C17.1.3</strong> : Assurer la continuité du service lors de la migration.
-                                </li>
+                                <li><strong>C17.1.1</strong> : Préparer l'environnement de production.</li>
+                                <li><strong>C17.1.2</strong> : Déployer l'application sur un hébergeur cloud.</li>
+                                <li><strong>C17.1.3</strong> : Vérifier la disponibilité et le bon fonctionnement après mise en ligne.</li>
                             </ul>
-                            <h2>Contexte & Migration</h2>
-                            <p>Initialement, le projet <strong>FlashMind</strong> était hébergé sur
-                                <strong>Netlify</strong>. Pour des raisons d'optimisation, de performances et
-                                d'intégration plus étroite avec notre stack React, nous avons opéré une migration vers
-                                <strong>Vercel</strong>.</p>
 
-                            <h2>La Technologie Serverless</h2>
-                            <p>Que ce soit Netlify ou Vercel, nous utilisons une architecture
-                                <strong>Serverless</strong> (sans serveur).</p>
+                            <h2>Contexte</h2>
+                            <p>Le déploiement a été réalisé sur deux infrastructures distinctes selon les besoins techniques des projets :</p>
+                            <ul>
+                                <li><strong>FlashMind</strong> (Application principale) : Déployée sur <strong>Firebase</strong> pour bénéficier de l'intégration avec les services Google (Functions, Auth).</li>
+                                <li><strong>Portfolio / Landing Page</strong> : Migré de <strong>Netlify vers Vercel</strong> pour optimiser les performances de rendu et simplifier le pipeline CI/CD.</li>
+                            </ul>
+
+                            <hr style="border: 1px dashed var(--color-border); margin: var(--spacing-lg) 0;">
+
+                            <h2>Réalisation 1 : Déploiement de FlashMind sur Firebase</h2>
+                            
+                            <h3>1. Préparation de l'environnement local</h3>
+                            <p>Installation du CLI Firebase et authentification pour lier l'environnement local au compte Google :</p>
+                            <pre><code>npm install -g firebase-tools
+firebase login</code></pre>
+                            
+                            <h3>2. Initialisation du projet</h3>
+                            <p>Configuration via <code>firebase init</code> avec les réglages suivants :</p>
+                            <ul>
+                                <li><strong>Hosting</strong> : Configuration des fichiers pour l'hébergement web.</li>
+                                <li><strong>Projet cible</strong> : Sélection du projet existant sur la console Firebase.</li>
+                                <li><strong>Dossier public</strong> : <code>dist</code> (contenant le build React).</li>
+                                <li><strong>SPA</strong> : "Yes" (Réécriture de toutes les requêtes vers index.html).</li>
+                            </ul>
+
+                            <h3>3. Mise en production</h3>
+                            <pre><code>npm run build
+firebase deploy</code></pre>
+
+                            <div class="doc-image-item" style="max-width: 600px; margin: 1rem auto;">
+                                <img src="img/firebase_deploy.png" alt="Déploiement Firebase Terminal">
+                                <p class="image-caption">Succès du déploiement de FlashMind via Firebase CLI</p>
+                            </div>
+
+                            <hr style="border: 1px dashed var(--color-border); margin: var(--spacing-lg) 0;">
+
+                            <h2>Réalisation 2 : Migration du Portfolio (Netlify vers Vercel)</h2>
+                            
+                            <p>Le passage de Netlify à Vercel a été motivé par une meilleure gestion des déploiements atomiques et une intégration plus fluide, offrant des temps de chargement plus rapides pour la page d'accueil.</p>
 
                             <div class="doc-info-box">
-                                <h3>C'est quoi le Serverless ? ☁️</h3>
-                                <p>Contrairement à un hébergement classique où vous louez une machine qui tourne 24h/24,
-                                    le serverless fonctionne à la demande :</p>
+                                <h3>La Technologie Serverless ☁️</h3>
+                                <p>Le <strong>Serverless</strong> (utilisé par Vercel) permet une abstraction totale des serveurs :</p>
                                 <ul>
-                                    <li><strong>Pas de gestion de serveur</strong> : C'est l'hébergeur (Vercel) qui gère
-                                        l'OS, les mises à jour et la sécurité.</li>
-                                    <li><strong>Évolutivité automatique</strong> : Si 10 000 personnes se connectent
-                                        d'un coup, l'infrastructure s'agrandit toute seule pour absorber le choc.</li>
-                                    <li><strong>Paiement à l'usage</strong> : On ne paye que quand le code est
-                                        réellement exécuté.</li>
+                                    <li><strong>Zéro maintenance</strong> : L'hébergeur gère l'infrastructure et l'orchestration.</li>
+                                    <li><strong>Scaling horizontal automatique</strong> : Le fournisseur multiplie les instances selon le trafic.</li>
+                                    <li><strong>Facturation à l'usage</strong> : Paiement uniquement pour les ressources consommées lors de l'exécution.</li>
                                 </ul>
                             </div>
 
-                            <h2>Démarche de Migration</h2>
+                            <h3>Processus de migration</h3>
                             <ol>
-                                <li><strong>Audit du build</strong> : Vérification que les scripts
-                                    <code>npm run build</code> génèrent correctement le dossier <code>dist</code>.</li>
-                                <li><strong>Connexion au dépôt GitHub</strong> : Liaison du projet GitHub à l'interface
-                                    Vercel pour automatiser le déploiement.</li>
-                                <li><strong>Configuration des variables d'environnement</strong> : Migration des clés
-                                    API (Gemini, Firebase) depuis Netlify vers le Dashboard Vercel pour sécuriser les
-                                    accès.</li>
-                                <li><strong>Déploiement continu (CI/CD)</strong> : Chaque modification sur la branche
-                                    <code>main</code> déclenche automatiquement une nouvelle mise en ligne sur Vercel.
-                                </li>
-                                <li><strong>Test de validation</strong> : Vérification que les fonctions serverless de
-                                    l'IA répondent aussi vite que sur l'ancien service.</li>
+                                <li><strong>Liaison du dépôt</strong> : Connexion du dépôt GitHub à la plateforme Vercel.</li>
+                                <li><strong>Configuration du Build</strong> : Détection automatique (Vite/Vanilla) et commande <code>npm run build</code>.</li>
+                                <li><strong>Variables d'environnement</strong> : Migration des clés secrètes depuis l'interface Netlify vers Vercel.</li>
+                                <li><strong>Vérification</strong> : Tests de performance via Lighthouse pour confirmer le gain de rapidité.</li>
                             </ol>
-                             <h3>Preuves de déploiement (Firebase & Vercel)</h3>
+
                             <div class="doc-image-grid">
                                 <div class="doc-image-item">
-                                    <img src="img/firebase_deploy.png" alt="Déploiement Firebase Terminal">
-                                    <p class="image-caption">Succès du déploiement via Firebase CLI</p>
+                                    <img src="img/vercel_panel.png" alt="Dashboard de Déploiement Vercel">
+                                    <p class="image-caption">Dashboard Vercel : Portfolio en production</p>
                                 </div>
                                 <div class="doc-image-item">
-                                    <img src="img/vercel_panel.png" alt="Dashboard de Déploiement Vercel">
-                                    <p class="image-caption">Dashboard Vercel : Projet Flashmind en production</p>
+                                    <img src="img/github_pages.png" alt="Configuration GitHub Pages">
+                                    <p class="image-caption">Complément : Hébergement statique GitHub Pages pour la documentation</p>
                                 </div>
                             </div>
 
-                             <h3>Hébergement Statique via GitHub Pages</h3>
-                            <p>En parallèle des déploiements Serverless et Firebase, certains de nos services vitrines et documentations sont hébergés de manière purement statique sur <strong>GitHub Pages</strong>.</p>
-                            <div class="doc-image-item" style="max-width: 600px; margin: 0 auto; margin-top: 1rem;">
-                                <img src="img/github_pages.png" alt="Configuration GitHub Pages">
-                                <p class="image-caption">Configuration du déploiement statique sur GitHub Pages</p>
-                            </div>
-
-                            <div class="doc-warning"><strong>⚠️ CONCLUSION :</strong> La migration vers Vercel a permis
-                                d'améliorer les temps de chargement et de simplifier notre pipeline de développement.
-                            </div>
+                            <div class="doc-warning"><strong>⚠️ CONCLUSION :</strong> La séparation des environnements (Firebase pour l'app, Vercel pour le portail) permet d'optimiser chaque service selon son usage spécifique.</div>
                         </div>
                     </div>
 
